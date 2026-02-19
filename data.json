@@ -1,0 +1,623 @@
+{
+  "sun": {
+    "name": "The Sun",
+    "emoji": "☀️",
+    "description": "The Sun is a G-type main-sequence star that accounts for 99.86% of the mass of the entire Solar System.",
+    "diameter": "1,391,000 km",
+    "mass": "1.989 × 10³⁰ kg",
+    "temperature": "5,500 °C (Surface)",
+    "coreTemperature": "15.7 Million °C",
+    "luminosity": "3.828 × 10²⁶ W",
+    "age": "4.603 Billion Years",
+    "funFact": "Every second, the Sun converts 600 million tons of hydrogen into helium, releasing energy equivalent to millions of nuclear bombs!"
+  },
+
+  "planets": [
+    {
+      "id": 1,
+      "name": "Mercury",
+      "emoji": "☿️",
+      "type": "Terrestrial",
+      "color": "#8C7853",
+      "diameter": "4,879 km",
+      "mass": "3.285 × 10²³ kg",
+      "density": "5.43 g/cm³",
+      "gravity": "3.7 m/s²",
+      "distanceFromSun": "57.9 Million km",
+      "distanceFromSunKm": 57900000,
+      "orbitalPeriod": "87.97 Earth days",
+      "rotationPeriod": "58.6 Earth days",
+      "temperature": "-173°C to 427°C",
+      "atmosphere": "Trace amounts of Oxygen, Sodium, Hydrogen, Helium",
+      "moons": 0,
+      "description": "Mercury is the smallest planet and closest to the Sun. It's a rocky, cratered celestial body with extreme temperatures.",
+      "ringSystem": false,
+      "moonsList": [],
+      "funFact": "Mercury orbits the Sun 3 times for every 2 rotations it makes on its axis - a 3:2 spin-orbit resonance!",
+      "lightYearFromSun": "0.000003873 ly",
+      "discoveredBy": "Known since ancient times",
+      "discoveryYear": "Before recorded history",
+      "composition": "Iron core, silicate rock mantle",
+      "surfaceComposition": "Silicate rock, iron oxide, craters",
+      "ageOfPlanet": "4.6 Billion years",
+      "maximumTemperature": "427°C (Day)",
+      "minimumTemperature": "-173°C (Night)",
+      "escapeVelocity": "4.3 km/s",
+      "magneticField": "Very weak (1% of Earth's)"
+    },
+    {
+      "id": 2,
+      "name": "Venus",
+      "emoji": "♀️",
+      "type": "Terrestrial",
+      "color": "#FFC649",
+      "diameter": "12,104 km",
+      "mass": "4.867 × 10²⁴ kg",
+      "density": "5.24 g/cm³",
+      "gravity": "8.87 m/s²",
+      "distanceFromSun": "108.2 Million km",
+      "distanceFromSunKm": 108200000,
+      "orbitalPeriod": "224.7 Earth days",
+      "rotationPeriod": "243 Earth days (Retrograde)",
+      "temperature": "463°C (Average Surface)",
+      "atmosphere": "96.5% CO₂, 3.5% N₂, Sulfuric Acid Clouds",
+      "moons": 0,
+      "description": "Venus is the hottest planet with a thick toxic atmosphere and clouds of sulfuric acid. It's similar in size to Earth but with hellish conditions.",
+      "ringSystem": false,
+      "moonsList": [],
+      "funFact": "Venus rotates backwards compared to most planets and is the only planet that rotates slower than it orbits!",
+      "lightYearFromSun": "0.000007242 ly",
+      "discoveredBy": "Known since ancient times",
+      "discoveryYear": "Before recorded history",
+      "composition": "Iron core, silicate rock mantle",
+      "surfaceComposition": "Basaltic rock, volcanic plains",
+      "ageOfPlanet": "4.6 Billion years",
+      "maximumTemperature": "463°C (Surface)",
+      "minimumTemperature": "Temperature uniform due to atmosphere",
+      "escapeVelocity": "10.4 km/s",
+      "magneticField": "Nearly absent (0.1% of Earth's)"
+    },
+    {
+      "id": 3,
+      "name": "Earth",
+      "emoji": "🌍",
+      "type": "Terrestrial",
+      "color": "#4A90E2",
+      "diameter": "12,742 km",
+      "mass": "5.972 × 10²⁴ kg",
+      "density": "5.52 g/cm³",
+      "gravity": "9.81 m/s²",
+      "distanceFromSun": "149.6 Million km (1 AU)",
+      "distanceFromSunKm": 149600000,
+      "orbitalPeriod": "365.25 Earth days",
+      "rotationPeriod": "23.93 hours",
+      "temperature": "-89°C to 57°C",
+      "atmosphere": "78% N₂, 21% O₂, 1% Ar, 0.04% CO₂",
+      "moons": 1,
+      "description": "Earth is our home planet, the only known world to harbor life. It has a diverse ecosystem and is protected by a magnetic field.",
+      "ringSystem": false,
+      "moonsList": [
+        {
+          "name": "The Moon",
+          "emoji": "🌙",
+          "diameter": "3,474 km",
+          "distance": "384,400 km",
+          "moons": 0
+        }
+      ],
+      "funFact": "Earth's core is as hot as the surface of the Sun! The continents are slowly drifting at about 2.5 cm per year.",
+      "lightYearFromSun": "0.000010 ly",
+      "discoveredBy": "This is Earth - our home",
+      "discoveryYear": "Inhabited since prehistoric times",
+      "composition": "Iron-nickel core, silicate rock mantle, water oceans",
+      "surfaceComposition": "Crust (continental and oceanic), water, atmosphere",
+      "ageOfPlanet": "4.543 Billion years",
+      "maximumTemperature": "57°C (Death Valley)",
+      "minimumTemperature": "-89°C (Antarctica)",
+      "escapeVelocity": "11.2 km/s",
+      "magneticField": "Strong - protects from solar radiation"
+    },
+    {
+      "id": 4,
+      "name": "Mars",
+      "emoji": "♂️",
+      "type": "Terrestrial",
+      "color": "#E27B58",
+      "diameter": "6,779 km",
+      "mass": "6.417 × 10²³ kg",
+      "density": "3.93 g/cm³",
+      "gravity": "3.71 m/s²",
+      "distanceFromSun": "227.9 Million km",
+      "distanceFromSunKm": 227900000,
+      "orbitalPeriod": "687 Earth days",
+      "rotationPeriod": "24.6 hours",
+      "temperature": "-195°C to 20°C",
+      "atmosphere": "95.3% CO₂, 2.7% N₂, 1.6% Ar",
+      "moons": 2,
+      "description": "Mars, the Red Planet, is a cold, dusty desert world with the largest volcano in the solar system: Olympus Mons.",
+      "ringSystem": false,
+      "moonsList": [
+        {
+          "name": "Phobos",
+          "emoji": "🪨",
+          "diameter": "22.4 km",
+          "distance": "9,376 km"
+        },
+        {
+          "name": "Deimos",
+          "emoji": "🪨",
+          "diameter": "12.4 km",
+          "distance": "23,463 km"
+        }
+      ],
+      "funFact": "A day on Mars is almost identical to Earth's - 24 hours 37 minutes. Scientists are seriously considering Mars colonization!",
+      "lightYearFromSun": "0.0000152 ly",
+      "discoveredBy": "Known since ancient times",
+      "discoveryYear": "Before recorded history",
+      "composition": "Iron oxide-rich silicate rock core and mantle",
+      "surfaceComposition": "Rust (Iron oxide), basaltic rock, polar ice caps",
+      "ageOfPlanet": "4.6 Billion years",
+      "maximumTemperature": "20°C (Summer equator)",
+      "minimumTemperature": "-195°C (Winter pole)",
+      "escapeVelocity": "5.03 km/s",
+      "magneticField": "Remnant magnetism - no active magnetic field"
+    },
+    {
+      "id": 5,
+      "name": "Jupiter",
+      "emoji": "♃",
+      "type": "Gas Giant",
+      "color": "#C88B3A",
+      "diameter": "139,820 km",
+      "mass": "1.898 × 10²⁷ kg",
+      "density": "1.326 g/cm³",
+      "gravity": "24.79 m/s²",
+      "distanceFromSun": "778.5 Million km",
+      "distanceFromSunKm": 778500000,
+      "orbitalPeriod": "11.86 Earth years",
+      "rotationPeriod": "9.93 hours",
+      "temperature": "-110°C (Average)",
+      "atmosphere": "75% H₂, 24% He, 1% Other",
+      "moons": 95,
+      "description": "Jupiter is the largest planet and a gas giant with stunning cloud bands and the famous Great Red Spot storm.",
+      "ringSystem": true,
+      "ringDescription": "Faint ring system composed mainly of dust",
+      "moonsList": [
+        {
+          "name": "Ganymede",
+          "emoji": "🌙",
+          "diameter": "5,268 km",
+          "distance": "1,070,400 km"
+        },
+        {
+          "name": "Callisto",
+          "emoji": "🌙",
+          "diameter": "4,821 km",
+          "distance": "1,882,700 km"
+        },
+        {
+          "name": "Io",
+          "emoji": "🌙",
+          "diameter": "3,643 km",
+          "distance": "421,700 km"
+        },
+        {
+          "name": "Europa",
+          "emoji": "❄️",
+          "diameter": "3,122 km",
+          "distance": "671,100 km"
+        }
+      ],
+      "funFact": "Jupiter's Great Red Spot is a storm larger than Earth that has been raging for at least 350 years!",
+      "lightYearFromSun": "0.0000521 ly",
+      "discoveredBy": "Known since ancient times",
+      "discoveryYear": "Before recorded history",
+      "composition": "Hydrogen and Helium gas with rocky core",
+      "surfaceComposition": "No solid surface - gaseous atmosphere",
+      "ageOfPlanet": "4.6 Billion years",
+      "maximumTemperature": "-108°C (Upper atmosphere)",
+      "minimumTemperature": "-166°C (Poles)",
+      "escapeVelocity": "59.5 km/s",
+      "magneticField": "Extremely strong - second strongest in solar system"
+    },
+    {
+      "id": 6,
+      "name": "Saturn",
+      "emoji": "♄",
+      "type": "Gas Giant",
+      "color": "#FAD5A5",
+      "diameter": "116,460 km",
+      "mass": "5.683 × 10²⁶ kg",
+      "density": "0.687 g/cm³",
+      "gravity": "10.44 m/s²",
+      "distanceFromSun": "1,434 Million km",
+      "distanceFromSunKm": 1434000000,
+      "orbitalPeriod": "29.46 Earth years",
+      "rotationPeriod": "10.7 hours",
+      "temperature": "-140°C (Average)",
+      "atmosphere": "96% H₂, 3% He, 1% Other",
+      "moons": 146,
+      "description": "Saturn is famous for its spectacular ring system made of ice and rock. It's the second-largest planet.",
+      "ringSystem": true,
+      "ringDescription": "Complex ring system with 7 main rings composed of icy particles and rock boulders",
+      "discoveredBy": "Known since ancient times",
+      "discoveryYear": "Before recorded history",
+      "composition": "Hydrogen and Helium gas with rocky core",
+      "surfaceComposition": "No solid surface - gaseous atmosphere with ammonia crystals",
+      "ageOfPlanet": "4.6 Billion years",
+      "maximumTemperature": "-138°C (Upper atmosphere)",
+      "minimumTemperature": "-180°C (Poles)",
+      "escapeVelocity": "35.5 km/s",
+      "magneticField": "Moderate magnetic field",
+      "moonsList": [
+        {
+          "name": "Titan",
+          "emoji": "🌙",
+          "diameter": "5,150 km",
+          "distance": "1,221,700 km"
+        },
+        {
+          "name": "Rhea",
+          "emoji": "🌙",
+          "diameter": "1,527 km",
+          "distance": "527,108 km"
+        },
+        {
+          "name": "Iapetus",
+          "emoji": "🌙",
+          "diameter": "1,469 km",
+          "distance": "3,560,820 km"
+        },
+        {
+          "name": "Enceladus",
+          "emoji": "❄️",
+          "diameter": "504 km",
+          "distance": "238,020 km"
+        }
+      ],
+      "funFact": "Saturn's density is so low that it would float in water! Titan has methane rain and liquid hydrocarbon lakes.",
+      "lightYearFromSun": "0.000096 ly"
+    },
+    {
+      "id": 7,
+      "name": "Uranus",
+      "emoji": "♅",
+      "type": "Ice Giant",
+      "color": "#4FD0E7",
+      "diameter": "50,724 km",
+      "mass": "8.681 × 10²⁵ kg",
+      "density": "1.27 g/cm³",
+      "gravity": "8.69 m/s²",
+      "distanceFromSun": "2,871 Million km",
+      "distanceFromSunKm": 2871000000,
+      "orbitalPeriod": "84.01 Earth years",
+      "rotationPeriod": "17.2 hours (Retrograde)",
+      "temperature": "-224°C (Average)",
+      "atmosphere": "83% H₂, 15% He, 2% CH₄",
+      "moons": 28,
+      "description": "Uranus is an ice giant that rotates on its side! It has a faint ring system and extreme weather patterns.",
+      "ringSystem": true,
+      "ringDescription": "Faint ring system with 13 known rings",
+      "moonsList": [
+        {
+          "name": "Titania",
+          "emoji": "🌙",
+          "diameter": "1,578 km",
+          "distance": "435,910 km"
+        },
+        {
+          "name": "Oberon",
+          "emoji": "🌙",
+          "diameter": "1,523 km",
+          "distance": "583,520 km"
+        },
+        {
+          "name": "Umbriel",
+          "emoji": "🌙",
+          "diameter": "1,169 km",
+          "distance": "265,970 km"
+        },
+        {
+          "name": "Ariel",
+          "emoji": "🌙",
+          "diameter": "1,158 km",
+          "distance": "191,020 km"
+        }
+      ],
+      "funFact": "Uranus rotates on its side with a tilt of 98 degrees, likely due to a collision early in the solar system's history!",
+      "lightYearFromSun": "0.000192 ly",
+      "discoveredBy": "William Herschel",
+      "discoveryYear": "1781",
+      "composition": "Water, methane, and ammonia ices with rocky core",
+      "surfaceComposition": "No solid surface - liquid water and methane mantle",
+      "ageOfPlanet": "4.6 Billion years",
+      "maximumTemperature": "-224°C (Average)",
+      "minimumTemperature": "-234°C (Poles)",
+      "escapeVelocity": "21.3 km/s",
+      "magneticField": "Unusual tilted magnetic field at 59° angle"
+    },
+    {
+      "id": 8,
+      "name": "Neptune",
+      "emoji": "♆",
+      "type": "Ice Giant",
+      "color": "#4166F5",
+      "diameter": "49,244 km",
+      "mass": "1.024 × 10²⁶ kg",
+      "density": "1.638 g/cm³",
+      "gravity": "11.15 m/s²",
+      "distanceFromSun": "4,495 Million km",
+      "distanceFromSunKm": 4495000000,
+      "orbitalPeriod": "164.79 Earth years",
+      "rotationPeriod": "16.1 hours",
+      "temperature": "-200°C (Average)",
+      "atmosphere": "80% H₂, 19% He, 1.5% CH₄",
+      "moons": 16,
+      "description": "Neptune is the windiest planet with the fastest winds in the solar system, reaching 2,100 km/h.",
+      "ringSystem": true,
+      "ringDescription": "5 main rings with several incomplete ring arcs",
+      "moonsList": [
+        {
+          "name": "Triton",
+          "emoji": "❄️",
+          "diameter": "2,707 km",
+          "distance": "354,800 km"
+        },
+        {
+          "name": "Proteus",
+          "emoji": "🪨",
+          "diameter": "210 km",
+          "distance": "117,646 km"
+        }
+      ],
+      "funFact": "Neptune's Great Dark Spot was a storm system larger than Earth that mysteriously disappeared when observed again!",
+      "lightYearFromSun": "0.000300 ly",
+      "discoveredBy": "Urbain Le Verrier & Johann Galle",
+      "discoveryYear": "1846",
+      "composition": "Water, methane, and ammonia ices with rocky core",
+      "surfaceComposition": "No solid surface - liquid water and methane mantle",
+      "ageOfPlanet": "4.6 Billion years",
+      "maximumTemperature": "-200°C (Average)",
+      "minimumTemperature": "-218°C (Poles)",
+      "escapeVelocity": "23.5 km/s",
+      "magneticField": "Complex tilted magnetic field"
+    }
+  ],
+
+  "asteroidBelt": {
+    "name": "Asteroid Belt",
+    "emoji": "🪨",
+    "type": "Debris Region",
+    "location": "Between Mars and Jupiter",
+    "distanceFromSun": "2.2 - 3.2 AU (330-480 Million km)",
+    "composition": "Rock, Metal, and Ice",
+    "largestObject": "Ceres (Dwarf Planet)",
+    "estimatedObjects": "1.9-3.2 Million asteroids > 1 km",
+    "funFact": "The asteroid belt is mostly empty space! If you were somehow inside it, you'd rarely see another asteroid. Ceres alone comprises 1/3 of all asteroid belt mass!"
+  },
+
+  "kuiperBelt": {
+    "name": "Kuiper Belt",
+    "emoji": "❄️",
+    "type": "Icy Debris Region",
+    "location": "Beyond Neptune",
+    "distanceFromSun": "30-55 AU (4.5-8.2 Billion km)",
+    "composition": "Frozen Volatiles (Methane, Ammonia, Water Ice)",
+    "largestObject": "Pluto (Former Planet)",
+    "estimatedObjects": "100,000+ objects > 100 km",
+    "funFact": "The Kuiper Belt is home to comets! Many short-period comets originate from this icy region. It's named after Dutch-American astronomer Gerard Kuiper."
+  },
+
+  "dwarfPlanets": [
+    {
+      "id": 1,
+      "name": "Ceres",
+      "emoji": "🔷",
+      "type": "Dwarf Planet",
+      "diameter": "946 km",
+      "distanceFromSun": "2.77 AU (415 Million km)",
+      "moons": 0,
+      "discoveredYear": "1801",
+      "description": "The largest object in the asteroid belt and a dwarf planet. Ceres contains 1/3 of the asteroid belt's total mass.",
+      "funFact": "Ceres may have a subsurface ocean of water! NASA's Dawn spacecraft discovered bright spots that might be salt deposits."
+    },
+    {
+      "id": 2,
+      "name": "Pluto",
+      "emoji": "🔷",
+      "type": "Dwarf Planet",
+      "diameter": "2,376 km",
+      "distanceFromSun": "39.48 AU (5.9 Billion km)",
+      "moons": 5,
+      "discoveredYear": "1930",
+      "description": "Once considered the 9th planet, Pluto was reclassified as a dwarf planet in 2006. It has an unusual tilted and elliptical orbit.",
+      "funFact": "Pluto's largest moon Charon is so large relative to Pluto that they form a binary system! Pluto has a nitrogen ice heart-shaped region."
+    },
+    {
+      "id": 3,
+      "name": "Eris",
+      "emoji": "🔷",
+      "type": "Dwarf Planet",
+      "diameter": "2,326 km",
+      "distanceFromSun": "96.4 AU (14.4 Billion km)",
+      "moons": 1,
+      "discoveredYear": "2005",
+      "description": "Eris is slightly smaller than Pluto but more massive. It takes 557 Earth years to orbit the Sun!",
+      "funFact": "Eris's discovery led to the reclassification of Pluto! It orbits the Sun with an extremely elliptical path taking it from 38 to 98 AU away."
+    },
+    {
+      "id": 4,
+      "name": "Makemake",
+      "emoji": "🔷",
+      "type": "Dwarf Planet",
+      "diameter": "1,430 km",
+      "distanceFromSun": "45.8 AU (6.85 Billion km)",
+      "moons": 1,
+      "discoveredYear": "2005",
+      "description": "Makemake is the second-brightest dwarf planet. It's the goddess of fertility in Rapa Nui mythology.",
+      "funFact": "Makemake has a moon called MK 2 that was discovered hiding behind the dwarf planet in 2015!"
+    },
+    {
+      "id": 5,
+      "name": "Haumea",
+      "emoji": "🔷",
+      "type": "Dwarf Planet",
+      "diameter": "2,332 km (Ellipsoidal)",
+      "distanceFromSun": "43.3 AU (6.48 Billion km)",
+      "moons": 2,
+      "discoveredYear": "2004",
+      "description": "Haumea is a unique egg-shaped dwarf planet with a rapid rotation. It spins so fast it's being torn apart!",
+      "funFact": "Haumea completes a full rotation in just 3.9 hours - the fastest rotating dwarf planet known! It's stretching into an elongated shape."
+    }
+  ],
+
+  "missions": [
+    {
+      "year": "1961",
+      "name": "Yuri Gagarin's Vostok 1",
+      "description": "First human spaceflight",
+      "status": "completed",
+      "achievements": "Historical milestone in human exploration"
+    },
+    {
+      "year": "1969",
+      "name": "Apollo 11 Moon Landing",
+      "description": "First humans on the Moon with Neil Armstrong and Buzz Aldrin",
+      "status": "completed",
+      "achievements": "Humans set foot on the Moon"
+    },
+    {
+      "year": "1997",
+      "name": "Mars Pathfinder",
+      "description": "First rover deployed on Mars",
+      "status": "completed",
+      "achievements": "Deployed Sojourner rover"
+    },
+    {
+      "year": "2004-2018",
+      "name": "Spirit & Opportunity Rovers",
+      "description": "Long-duration rovers exploring Mars",
+      "status": "completed",
+      "achievements": "Discovered evidence of water on Mars"
+    },
+    {
+      "year": "2011-Present",
+      "name": "Curiosity Rover",
+      "description": "NASA's Mars Science Laboratory exploring Gale Crater",
+      "status": "active",
+      "achievements": "Discovered organic molecules in Martian rock"
+    },
+    {
+      "year": "2021-Present",
+      "name": "Perseverance Rover & Ingenuity",
+      "description": "Latest Mars rover with the first aerial helicopter",
+      "status": "active",
+      "achievements": "Collecting Mars samples, helicopter flights"
+    },
+    {
+      "year": "1972-1973",
+      "name": "Pioneer 10 & 11 Probes",
+      "description": "First probes to reach Jupiter and Saturn",
+      "status": "completed",
+      "achievements": "Close-up images of gas giants"
+    },
+    {
+      "year": "1977",
+      "name": "Voyager 1 & 2",
+      "description": "Grand Tour of the solar system",
+      "status": "active",
+      "achievements": "Now in interstellar space"
+    },
+    {
+      "year": "2006-2016",
+      "name": "NASA Dawn Mission",
+      "description": "Explored Vesta and Ceres",
+      "status": "completed",
+      "achievements": "Revealed dwarf planets' composition"
+    },
+    {
+      "year": "2026",
+      "name": "Mars Sample Return",
+      "description": "Returning Martian samples to Earth",
+      "status": "future",
+      "achievements": "Search for life signatures"
+    },
+    {
+      "year": "2030s",
+      "name": "Artemis Program",
+      "description": "Return humans to the Moon and establish lunar base",
+      "status": "future",
+      "achievements": "Gateway to Mars exploration"
+    },
+    {
+      "year": "2040s",
+      "name": "Human Mars Mission",
+      "description": "First humans to set foot on Mars",
+      "status": "future",
+      "achievements": "Greatest exploration milestone"
+    }
+  ],
+
+  "timeline": [
+    {
+      "date": "4.6 Billion BC",
+      "title": "Solar System Formation",
+      "description": "The solar system forms from a collapsing molecular cloud. The Sun ignites nuclear fusion."
+    },
+    {
+      "date": "4.5 Billion BC",
+      "title": "Giant Impact",
+      "description": "A Mars-sized body collides with Earth, creating the Moon from debris."
+    },
+    {
+      "date": "4.4 Billion BC",
+      "title": "Early Earth",
+      "description": "Heavy bombardment period ends. Oceans begin forming as temperature drops."
+    },
+    {
+      "date": "3.8 Billion BC",
+      "title": "First Life",
+      "description": "Earliest evidence of microbial life on Earth appears in rocks."
+    },
+    {
+      "date": "2.4 Billion BC",
+      "title": "Great Oxidation Event",
+      "description": "Photosynthetic organisms begin filling atmosphere with oxygen, changing Earth's chemistry."
+    },
+    {
+      "date": "600 Million BC",
+      "title": "Cambrian Explosion",
+      "description": "Complex multicellular life rapidly diversifies in oceans."
+    },
+    {
+      "date": "66 Million BC",
+      "title": "K-Pg Extinction",
+      "description": "Asteroid impact wipes out dinosaurs, allowing mammals to thrive."
+    },
+    {
+      "date": "3 Million BC",
+      "title": "Early Humans",
+      "description": "Early hominins walk upright in Africa."
+    },
+    {
+      "date": "1961 AD",
+      "title": "Space Age Begins",
+      "description": "Yuri Gagarin becomes first human in space aboard Vostok 1."
+    },
+    {
+      "date": "1969 AD",
+      "title": "Moon Landing",
+      "description": "Apollo 11 astronauts Neil Armstrong and Buzz Aldrin land on the Moon."
+    },
+    {
+      "date": "1997 AD",
+      "title": "Mars Pathfinder",
+      "description": "First rover successfully explores Mars, sending back panoramic images."
+    },
+    {
+      "date": "Present",
+      "title": "Current Exploration",
+      "description": "Multiple rovers and probes exploring Mars, Venus, and beyond. Search for life continues."
+    }
+  ]
+}

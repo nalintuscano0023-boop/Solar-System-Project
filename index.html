@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Solar System Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🌍</span>
+                <h1>Solar System Explorer</h1>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-btn active" onclick="switchMode('planets')">🪐 Planets</button>
+                <button class="nav-btn" onclick="switchMode('visualization')">🎨 3D View</button>
+                <button class="nav-btn" onclick="switchMode('missions')">🚀 Missions</button>
+                <button class="nav-btn" onclick="switchMode('comparison')">📊 Compare</button>
+                <button class="nav-btn" onclick="switchMode('timeline')">⏱️ Timeline</button>
+            </nav>
+            <div class="theme-toggle">
+                <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Explore the Cosmos</h2>
+            <p class="hero-subtitle">Discover planets, moons, and celestial wonders in our solar system</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="planetCount">8</span>
+                    <span class="stat-label">Planets</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="moonCount">200+</span>
+                    <span class="stat-label">Moons</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.6B</span>
+                    <span class="stat-label">Years Old</span>
+                </div>
+            </div>
+        </div>
+        <canvas id="heroCanvas"></canvas>
+    </section>
+
+    
+    <section class="search-section">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search planets, moons, discoveries..." class="search-input">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" onclick="filterByCriteria('all')">All</button>
+                <button class="filter-btn" onclick="filterByCriteria('terrestrial')">Terrestrial</button>
+                <button class="filter-btn" onclick="filterByCriteria('gas')">Gas Giants</button>
+                <button class="filter-btn" onclick="filterByCriteria('ice')">Ice Giants</button>
+            </div>
+            <select id="sortSelect" class="sort-select" onchange="sortPlanetsBy(this.value)">
+                <option value="order">Order from Sun</option>
+                <option value="size">Size (Largest)</option>
+                <option value="moons">Moons Count</option>
+                <option value="distance">Distance from Sun</option>
+            </select>
+        </div>
+    </section>
+
+    
+    <div class="content-wrapper">
+        
+        <section id="planetsSection" class="section-content active">
+            
+            <div class="sun-info-card glass-effect">
+                <div class="sun-header">
+                    <div class="sun-visual"></div>
+                    <div class="sun-content">
+                        <h2>☀️ The Sun</h2>
+                        <p class="sun-description" id="sunDesc"></p>
+                    </div>
+                </div>
+                <div class="sun-stats-grid">
+                    <div class="sun-stat">
+                        <span class="stat-label">Diameter</span>
+                        <span class="stat-value" id="sunDiameter"></span>
+                    </div>
+                    <div class="sun-stat">
+                        <span class="stat-label">Surface Temperature</span>
+                        <span class="stat-value" id="sunTemp"></span>
+                    </div>
+                    <div class="sun-stat">
+                        <span class="stat-label">Core Temperature</span>
+                        <span class="stat-value" id="sunCoreTemp"></span>
+                    </div>
+                    <div class="sun-stat">
+                        <span class="stat-label">Mass</span>
+                        <span class="stat-value" id="sunMass"></span>
+                    </div>
+                    <div class="sun-stat">
+                        <span class="stat-label">Age</span>
+                        <span class="stat-value" id="sunAge"></span>
+                    </div>
+                    <div class="sun-stat">
+                        <span class="stat-label">Luminosity</span>
+                        <span class="stat-value" id="sunLum"></span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <h2 class="section-title">🪐 Planets</h2>
+            <div class="planets-grid" id="planetsGrid"></div>
+
+            
+            <h2 class="section-title">🌙 Notable Moons</h2>
+            <div class="moons-grid" id="moonsGrid"></div>
+
+            
+            <h2 class="section-title">✨ Celestial Regions</h2>
+            <div class="regions-container">
+                <div class="region-card glass-effect" id="asteroidBeltCard"></div>
+                <div class="region-card glass-effect" id="kuiperBeltCard"></div>
+            </div>
+
+            
+            <h2 class="section-title">🔷 Dwarf Planets & Small Bodies</h2>
+            <div class="dwarf-planets-grid" id="dwarfPlanetsGrid"></div>
+        </section>
+
+        
+        <section id="visualizationSection" class="section-content">
+            <div class="visualization-container">
+                <canvas id="canvas3D"></canvas>
+                <div class="visualization-controls glass-effect">
+                    <div class="control-group">
+                        <label>View Mode</label>
+                        <select id="viewMode" onchange="updateVisualization()">
+                            <option value="orbit">Orbital View</option>
+                            <option value="realscale">Real Scale</option>
+                            <option value="compact">Compact View</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label>Speed</label>
+                        <input type="range" id="speedSlider" min="0" max="5" value="1" onchange="updateVisualization()">
+                    </div>
+                    <div class="control-group">
+                        <label>Show Orbits</label>
+                        <input type="checkbox" id="showOrbits" checked onchange="updateVisualization()">
+                    </div>
+                    <button class="control-btn" onclick="resetVisualization()">Reset View</button>
+                </div>
+                <div class="planet-info-panel glass-effect" id="planetInfoPanel">
+                    <h3 id="viewPlanetName">Select a Planet</h3>
+                    <div id="viewPlanetInfo"></div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="missionsSection" class="section-content">
+            <h2 class="section-title">🚀 Historic & Future Missions</h2>
+            <div class="missions-container" id="missionsContainer"></div>
+        </section>
+
+        
+        <section id="comparisonSection" class="section-content">
+            <h2 class="section-title">📊 Planet Comparison Tool</h2>
+            <div class="comparison-controls glass-effect">
+                <div class="control-group">
+                    <label>Planet 1:</label>
+                    <select id="planet1Select" onchange="updateComparison()"></select>
+                </div>
+                <div class="control-group">
+                    <label>Planet 2:</label>
+                    <select id="planet2Select" onchange="updateComparison()"></select>
+                </div>
+                <button class="control-btn" onclick="compareCharacteristics()">Advanced Compare</button>
+            </div>
+            <div class="comparison-display" id="comparisonDisplay"></div>
+        </section>
+
+        
+        <section id="timelineSection" class="section-content">
+            <h2 class="section-title">⏱️ Solar System Timeline</h2>
+            <div class="timeline-container" id="timelineContainer"></div>
+        </section>
+    </div>
+
+    
+    <div id="planetModal" class="modal">
+        <div class="modal-content glass-effect">
+            <div class="modal-header">
+                <h2 id="planetNameLarge"></h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="planet-visual-large" id="planetVisualLarge"></div>
+                <div class="modal-info" id="modalInfo"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading Solar System Data...</p>
+    </div>
+
+    <div class="particles-background" id="particlesBackground"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
